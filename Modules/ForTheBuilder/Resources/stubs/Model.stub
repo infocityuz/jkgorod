@@ -1,0 +1,15 @@
+<?php
+
+namespace Modules\ForTheBuilder\Entities;
+
+use Illuminate\Database\Eloquent\Model;
+
+class {{modelName}} extends Model
+{
+    protected $connection = 'mysql2';
+    protected $table = '{{table}}';
+    protected $fillable = [
+        {{fillable}}
+    ];
+
+}

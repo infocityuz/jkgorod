@@ -1,0 +1,26 @@
+<?php
+
+namespace Modules\ForTheBuilder\Http\Requests;
+
+
+class {{modelName}}Request extends BaseFormRequest
+{
+    public function authorize()
+    {
+        return true;
+    }
+
+    public function store()
+    {
+        return [
+            {{rulse}}
+        ];
+    }
+
+    public function update()
+    {
+        return [
+            {{rulse}}
+        ];
+    }
+}

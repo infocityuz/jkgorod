@@ -1,0 +1,50 @@
+[05-Oct-2022 13:40:33 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[05-Oct-2022 13:40:35 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[05-Oct-2022 13:40:42 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[05-Oct-2022 13:52:18 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[05-Oct-2022 13:52:21 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[05-Oct-2022 13:52:21 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[05-Oct-2022 13:59:35 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[05-Oct-2022 13:59:37 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/vendor/composer/platform_check.php on line 24
+[07-Oct-2022 13:30:26 UTC] PHP Warning:  POST Content-Length of 15589936 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Oct-2022 13:31:07 UTC] PHP Warning:  POST Content-Length of 15589936 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Oct-2022 13:32:13 UTC] PHP Warning:  POST Content-Length of 15589936 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Oct-2022 13:38:23 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/crmapp/vendor/composer/platform_check.php on line 24
+[07-Oct-2022 13:38:47 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.30. in /home/host2551/public_html/crmapp/vendor/composer/platform_check.php on line 24
+[07-Oct-2022 19:07:03 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 20480 bytes) in /home/host2551/public_html/crmapp/app/components/ImageResize.php on line 181
+[07-Oct-2022 19:07:03 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 524288 bytes) in /home/host2551/public_html/crmapp/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php on line 151
+[20-Oct-2022 17:31:14 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16000000 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 147
+[20-Oct-2022 17:31:19 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16000000 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 147
+[20-Oct-2022 17:31:24 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16000000 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 147
+[20-Oct-2022 17:34:36 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16000000 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 147
+[20-Oct-2022 17:35:48 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:38:01 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:38:35 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:38:35 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 524288 bytes) in /home/host2551/public_html/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php on line 151
+[20-Oct-2022 17:38:40 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:38:40 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 524288 bytes) in /home/host2551/public_html/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php on line 151
+[20-Oct-2022 17:38:55 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:38:55 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 524288 bytes) in /home/host2551/public_html/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php on line 151
+[20-Oct-2022 17:39:02 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:39:02 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 524288 bytes) in /home/host2551/public_html/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php on line 151
+[20-Oct-2022 17:39:20 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:39:20 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 524288 bytes) in /home/host2551/public_html/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php on line 151
+[20-Oct-2022 17:39:25 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16384 bytes) in /home/host2551/public_html/app/components/ImageResize.php on line 181
+[20-Oct-2022 17:39:25 Asia/Tashkent] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 524288 bytes) in /home/host2551/public_html/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php on line 151
+[21-Oct-2022 11:24:41 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 11:24:41 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 11:24:41 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 11:36:46 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 11:36:46 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 11:36:46 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:45:07 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:45:07 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:45:07 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[21-Oct-2022 13:49:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0

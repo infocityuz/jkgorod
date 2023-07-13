@@ -1,0 +1,13 @@
+{
+    "name": "ForTheBuilder",
+    "alias": "forthebuilder",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ForTheBuilder\\Providers\\ForTheBuilderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

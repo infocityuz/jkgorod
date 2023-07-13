@@ -1,0 +1,96 @@
+[
+    {
+        "region":["Андижанская область", "andizhanskaya-oblast"],
+        "values":[["Акалтын", "oqoltin"], ["Алтынкуль", "oltinkol"], ["Андижан", "andizhan"], ["Асака", "asaka"], ["Ахунбабаев", "ahunbabaev"],
+            ["Балыкчи", "baliqchi"], ["Боз", "boz"], ["Булакбаши", "buloqboshi"],
+        ["Карасу", "qorasuv"], ["Куйганьяр", "kuyganyor"], ["Кургантепа", "kurgantepa"], ["Мархамат", "marhamat"], ["Пайтуг", "pajtug"],
+            ["Пахтаабад", "pahtaabad"], ["Шахрихан", "shahrihan"], ["Ханабад", "hanabad"], ["Ходжаабад", "hodzhaabad"]]
+    },
+    {
+        "region":["Бухарская область", "buharskaya-oblast"],
+        "values":[["Алат", "alat"], ["Бухара", "buhara"], ["Галаасия", "galaasiya"], ["Газли", "gazli"], ["Гиждуван", "gizhduvan"], ["Каган", "kagan"],
+            ["Каракуль", "karakul"], ["Караулбазар", "qorovulbozor"], ["Ромитан", "romitan"], ["Шафиркан", "shafirkan"], ["Вабкент", "vabkent"],
+            ["Жондор", "jondor"]]
+    },
+    {
+        "region":["Джизакская область", "dzhizakskaya-oblast"],
+        "values":[["Айдаркуль", "aydar_koli"], ["Баландчакир", "balandchaqir"], ["Даштобод", "dashtobod"], ["Дустлик", "dustlik"], ["Джизак", "dzhizak"],
+            ["Гагарин", "gagarin"], ["Галлаарал", "gallyaaral"], ["Голиблар", "goliblar"], ["Марджанбулак", "mardzhanbulak"], ["Пахтакор", "pahtakor"],
+            ["Учтепа", "uchtepa"], ["Усмат", "osmat"], ["Янгикишлак", "yangiqishloq"], ["Заамин", "zomin"], ["Зафарабад", "zafarobod"], ["Зарбдар", "zarbdor"]]
+    },
+    {
+        "region":["Каракалпакстан", "karakalpakstan"],
+        "values":[["Акмангит", "oqmangit"], ["Беруни", "beruni"], ["Бустан", "bustan"], ["Чимбай", "osmat"], ["Канлыкуль", "qanlikol"], ["Караузяк", "qoraozak"],
+            ["Кегейли", "kegeyli"], ["Кунград", "kungrad"], ["Мангит", "mangit"], ["Муйнак", "mujnak"], ["Нукус", "nukus"], ["Шуманай", "shumanaj"],
+            ["Тахиаташ", "tahiatash"], ["Тахтакупыр", "taxtakopir"],  ["Турткуль", "turtkul"], ["Ходжейли", "hodzhejli"]]
+    },
+    {
+        "region":["Кашкадарьинская область", "kashkadarinskaya-oblast"],
+        "values":[["Бешкент", "beshkent"], ["Чиракчи", "chirakchi"], ["Дехканабад", "dehkanabad"], ["Гузар", "guzar"], ["Камаши", "kamashi"],
+            ["Карашина", "karashina"], ["Карши", "karshi"], ["Касан", "kasan"], ["Касби", "kasbi"], ["Китаб", "kitab"], ["Мубарек", "mubarek"],
+            ["Муглан", "muglon"], ["Шахрисабз", "shahrisabz"],
+            ["Талимарджан", "talimardzhan"], ["Яккабаг", "yakkabag"], ["Янги Миришкор", "mirishkor"], ["Янги-Нишан", "nishan"]]
+    },
+    {
+        "region":["Навоийская область", "navoijskaya-oblast"],
+        "values":[["Бешрабат", "beshrobot"], ["Канимех", "konimex"], ["Кармана", "karmana"], ["Кызылтепа", "kyzyltepa"], ["Навои", "navoi"], ["Нурата", "nurata"],
+            ["Тамдыбулак", "tomdibuloq"], ["Учкудук", "uchkuduk"], ["Янгирабат", "yangirabat"], ["Зарафшан", "zarafshan"]]
+    },
+    {
+        "region":["Наманганская область", "namanganskaya-oblast"],
+        "values":[["Чартак", "chartak"], ["Челак", "chust"], ["Чуст", "chust"], ["Джумашуй", "jomashoy"], ["Касансай", "kasansaj"], ["Наманган", "namangan"],
+            ["Пап", "pap"], ["Ташбулак", "toshbuloq"], ["Туракурган", "turakurgan"], ["Учкурган", "uchkurgan"], ["Хаккулабад", "hakulabad"]]
+    },
+    {
+        "region":["Самаркандская область", "samarkandskaya-oblast"],
+        "values":[["Акташ", "aktash"], ["Булунгур", "bulungur"], ["Чилек", "chilek"], ["Дарбанд", "darband"],  ["Джамбай", "dzhambaj"], ["Джума", "dzhuma"],
+            ["Гузалкент", "gozalkent"],  ["Гюлабад", "gulobod"], ["Иштыхан", "ishtyhan"], ["Каттакурган", "kattakurgan"], ["Кушрабад", "qoshrobod"],
+            ["Лаиш", "loish"], ["Нурабад", "nurabad"], ["Пайарык", "payariq"], ["Пайшанба", "payshanba"], ["Самарканд", "samarkand"], ["Тайлак", "tayloq"], ["Ургут", "osmat"],
+            ["Зиадин", "ziadin"]]
+    },
+    {
+        "region":["Сурхандарьинская область", "surhandarinskaya-oblast"],
+        "values":[["Ангор", "angor"], ["Байсун", "bajsun"], ["Бандихон", "bandixon"], ["Денау", "denau"], ["Джаркурган", "dzharkurgan"], ["Карлук", "qorlik"],
+            ["Кизирик", "kizirik"], ["Кумкурган", "kumkurgan"], ["Музрабад", "muzrabad"], ["Сариасия", "sariosiyo"], ["Сарык", "sariq"], ["Шаргунь", "shargun"],
+            ["Шерабад", "sherabad"], ["Шурчи", "shurchi"], ["Термез", "termez"], ["Учкызыл", "uchqizil"], ["Узун", "uzun"], ["Халкабад", "xalqobod"]]
+    },
+    {
+        "region":["Сырдарьинская область", "syrdarinskaya-oblast"],
+        "values":[["Бахт", "baht"], ["Баяут", "boyovut"], ["Cырдарья", "sirdaryo"], ["Гулистан", "gulistan"], ["Навруз", "navroz"], ["Сайхун", "sayxun"],
+            ["Сардоба", "sardoba"], ["Ширин", "shirin"], ["Сырдарья", "sirdaryo"], ["Теренозек", "terenozek"], ["Хаваст", "xovos"], ["Янгиер", "yangier"],
+            ["Янгиёр", "yangiyer"]]
+    },
+    {
+        "region":["Ташкентская область", "toshkent-oblast"],
+        "values":[["Аккурган", "akkurgan"], ["Алмалык", "almalyk"], ["Ангрен", "angren"], ["Ахангаран", "ahangaran"], ["Бекабад", "bekabad"],
+            ["Большой Чимган", "katta_chimyon"], ["Бука", "buka"], ["Чарвак", "chorvoq"], ["Чиназ", "chinaz"], ["Чирчик", "chirchik"], ["Cукок", "so_qoq"],
+            ["Дурмень", "durmen"], ["Дустабад", "dustabad"], ["Эшангузар", "eshanguzar"], ["Газалкент", "gazalkent"], ["Гульбахор", "gulbahor"],
+        ["Искандар", "iskandar"], ["Карасу", "qorasuv"], ["Келес", "keles"], ["Кибрай", "kibraj"], ["Коксарай", "koksaroy"], ["Красногорск", "krasnogórsk"],
+            ["Мирабад", "mirobod"], ["Назарбек", "nazarbek"],
+        ["Нурафшан (Тойтепа)", "tojtepa"], ["Паркент", "parkent"], ["Пскент", "pskent"], ["Салар", "salar"], ["Ташкент", "tashkent"], ["Ташморе", "tashmore"],
+            ["Туркестан", "turkiston"], ["Уртааул", "ortaovul"],
+        ["Ходжикент", "xojakent"], ["Янгиабад", "yangiobod"], ["Янгибазар", "yangibazar"], ["Янгиюль", "yangiyul"], ["Зафар", "zafar"], ["Зангиата", "zangiota"]]
+    },
+    {
+        "region":["Ташкент весь город", "tashkent"],
+        "values":[["Алмазарский район", 20], ["Бектемирский район", 12], ["Мирабадский район", 13],
+            ["Мирзо-Улугбекский район", 12], ["Сергелийский район", 19],
+            ["Учтепинский район", 21], ["Чиланзарский район", 23], ["Шайхантахурский район", 24],
+            ["Юнусабадский район", 25], ["Яккасарайский район", 26], ["Яшнабадский район", 22]
+        ]
+    },
+    {
+        "region":["Ферганская область", "ferganskaya-oblast"],
+        "values":[["Алтыарык", "oltiariq"], ["Багдад", "bogdod"], ["Бешарык", "besharyk"], ["Дангара", "dangara"],
+            ["Фергана", "fergana"], ["Коканд", "kokand"],
+            ["Кува", "kuva"], ["Кувасай", "kuvasaj"], ["Лангар", "langar"], ["Навбахор", "navbahor"], ["Маргилан", "margilan"], ["Раван", "ravon"], ["Риштан", "rishtan"],
+            ["Шахимардан", "shohimardon"],  ["Ташлак", "toshloq"], ["Учкуприк", "uchkopriq"], ["Вуадиль", "vodil"], ["Хамза", "hamza"], ["Яйпан", "yaypan"],
+        ["Янги Маргилан", "yangi_margilon"], ["Янгикурган", "yangiqorgon"], ["Язъяван", "yozyovon"]]
+    },
+    {
+        "region":["Хорезмская область", "horezmskaya-oblast"],
+        "values":[["Багат", "bagat"], ["Чалыш", "cholish"], ["Гурлен", "gurlen"], ["Караул", "qorovul"],
+            ["Кошкупыр", "qoshkopir"], ["Питнак", "pitnak"], ["Шават", "shovot"], ["Ургенч", "urgench"],
+            ["Ханка", "hanka"], ["Хазарасп", "xozarasp"], ["Хива", "hiva"], ["Янгиарык", "yangiariq"]]
+    }
+]
