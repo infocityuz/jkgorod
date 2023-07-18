@@ -483,14 +483,14 @@
                     <div class="modal-body modalPechat">
                         <h5 class="jkAttributEdit">{{ translate('Print') }}</h5>
 
-                        <div class="d-flex justify-content-between">
+                        {{-- <div class="d-flex justify-content-between">
                             <div class="sozdatImyaSpsok" style="width: 100%;">
                                 <h3 class="sozdatImyaSpisokH3">{{ translate('U.S. dollar') }}
                                     <input class="checkbox_us" name="checkbox_us" type="checkbox"  checked>
                                 </h3>
                                 <input type="number" value="1" class="form-control" name="USD" readonly>
-                                {{-- <div class="sozdatImyaSpisokInput text-right activeDollarSummaJK24"
-                                    style="padding-right: 10px;">1</div> --}}
+                                <div class="sozdatImyaSpisokInput text-right activeDollarSummaJK24"
+                                    style="padding-right: 10px;">1</div>
                             </div>
                             <div class="sozdatImyaSpsok" style="width: 100%; margin-left: 15px;">
                                 <h3 class="sozdatImyaSpisokH3">{{ translate('Kyrgyz soum') }}
@@ -498,10 +498,10 @@
                                 </h3>
                                 <input type="number" class="form-control" name="SUM" min="0" autocomplete="off"
                                     value="{{ (isset($currency->SUM) ? $currency->SUM : 0) / (isset($currency->USD) ? $currency->USD : 1) }}" readonly>
-                                {{-- <div class="sozdatImyaSpisokInput text-right activeDollarSummaJK24"
-                                    id="activeDollarSummaJK2" style="padding-right: 10px;" type="text">11 000</div> --}}
+                                <div class="sozdatImyaSpisokInput text-right activeDollarSummaJK24"
+                                    id="activeDollarSummaJK2" style="padding-right: 10px;" type="text">11 000</div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="sozdatImyaSpsok">
                             <h3 class="sozdatImyaSpisokH3">{{ translate('Valid until:') }}</h3>
