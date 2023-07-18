@@ -293,11 +293,11 @@ class DealController extends Controller
         
         
 
-        // $view = 'forthebuilder::deal.print';
-        $view = 'forthebuilder::deal.new_print';
+        $view = 'forthebuilder::deal.print';
+        // $view = 'forthebuilder::deal.new_print';
         if (isset($data['is_installment']) && $data['is_installment'] != NULL)
-            // $view = 'forthebuilder::deal.printR';
-            $view = 'forthebuilder::deal.new_print';
+            $view = 'forthebuilder::deal.printR';
+            // $view = 'forthebuilder::deal.new_print';
 
         $url = route('forthebuilder.clients.show', [$model->client->id, $houseFlatItem->id, 0]);
         // $area = json_decode($houseFlatItem->ares_price)->hundred->total;
@@ -511,11 +511,11 @@ class DealController extends Controller
             
             DB::commit();
             Log::channel('action_logs2')->info("пользователь создал новую deal : ", ['info-data' => $model]);
-            // $view = 'forthebuilder::deal.print';
-            $view = 'forthebuilder::deal.new_print';
+            $view = 'forthebuilder::deal.print';
+            // $view = 'forthebuilder::deal.new_print';
             if (isset($data['is_installment']) && $data['is_installment'] != NULL)
-                // $view = 'forthebuilder::deal.printR';
-                $view = 'forthebuilder::deal.new_print';
+                $view = 'forthebuilder::deal.printR';
+                // $view = 'forthebuilder::deal.new_print';
 
             // $area = json_decode($houseFlatItem->ares_price)->hundred->total;
             // dd($has_pay_status);
