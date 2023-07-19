@@ -323,43 +323,16 @@ class ClientsController extends Controller
         $model->status = Constants::ACTIVE;
         $model->type = $data['lead_status'];
         $model->looking_for = $data['looking_for'];
-        $model->house_id = $data['house_id'];
-        $model->house_flat_id = $data['house_flat_id'];
-        $model->budget = $data['budget'];
+        if($request->deal_status == 2){
+            $model->house_id = $data['house_id'];
+            $model->house_flat_id = $data['house_flat_id'];
+            $model->budget = $data['budget'];
+        }
         $model->save();
         if (isset($model->id)) {
             return redirect()->route('forthebuilder.clients.index')->with('success', translate('successfully'));
         }
 
-
-        // // $leads = Clients::all();
-        // // $leads = Clients::where('series_number', str_replace(' ','', $data['series_number']))->first();
-        // // foreach ($leads as $lead){
-        // //     $series_number[] = str_replace(' ','', $lead->series_number);
-        // // }
-        // // if(!isset($leads)){
-        // $model = new Clients();
-        // $model->first_name = $data['first_name'];
-        // $model->last_name = $data['last_name'];
-        // $model->middle_name = $data['middle_name'];
-        // $model->phone = $data['phone'];
-        // $model->additional_phone = $data['additional_phone'];
-        // $model->email = $data['email'];
-        // $model->source = $data['source'];
-        // $model->lead_status = $data['lead_status'];
-        // $model->issued_by = $data['issued_by'];
-        // $model->inn = str_replace(' ', '', $data['inn']);
-        // // $model->referer = $data['referer'];
-        // // $model->created_at = $data['created_at'];
-        // // $model->requestid = $data['requestid'];
-        // // $model->lead_status_id = $data['lead_status_id'];
-        // $model->user_id = Auth::user()->id;
-        // if ($model->save()) {
-        //     Log::channel('action_logs2')->info("пользователь создал новую Лиды : " . $model->name . "", ['info-data' => $model]);
-
-        //     return redirect()->route('forthebuilder.clients.index')->with('success', translate('successfully'));
-        // }
-        // }else{
 
         $leadStatuses = LeadStatus::all();
         return view('forthebuilder::clients.create', [

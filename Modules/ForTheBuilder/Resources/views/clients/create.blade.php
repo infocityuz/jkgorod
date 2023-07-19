@@ -148,11 +148,12 @@
                     <div class="d-flex justify-content-between">
                         <div class="form-group width_45">
                             <h3 class="sozdatImyaSpisokH3">{{ translate('status') }}</h3>
-                            <select class="form-control width_100 sozdatImyaSpisokSelectOption @error('lead_status') is-invalid error-data-input @enderror"
+                            <select class="form-control width_100 @error('lead_status') is-invalid error-data-input @enderror"
                                     id="exampleFormControlSelect1" name="lead_status" data-placeholder="{{ translate('select') }}">
                                 <option value="{{ Constants::FIRST_CONTACT }}">{{ translate('First contact') }}</option>
-                                <option value="{{ Constants::NEGOTIATION }}">{{ translate('Negotiation') }}</option>
+                                <option {{$house_flat == ''?'':'selected'}} value="{{ Constants::NEGOTIATION }}">{{ translate('Negotiation') }}</option>
                             </select>
+                            <input type="hidden" value="" name="deal_status" id="deal_status">
                             <span class="error-data">
                                 @error('lead_status')
                                     {{ $message }}
@@ -256,8 +257,10 @@
     <script src="{{ asset('/backend-assets/plugins/jquery.maskedinput.min.js') }}"></script>
     <script src="{{ asset('/backend-assets/plugins/toastr/toastr.min.js') }}"></script>
 
+
     <script>
         let page_name = 'clients';
+        let deal_status = document.getElementById('deal_status')
         $(document).ready(function() {
             $('#sent').datetimepicker({
                 format: 'Y-M-D',
@@ -268,16 +271,21 @@
             if (sessionWarning) {
                 toastr.warning(sessionWarning)
             }
+
             if($('#exampleFormControlSelect1').val() == 2){
+                deal_status.value = 2;
                 if($('#flat_modal').hasClass('d-none')){
                     $('#flat_modal').removeClass('d-none');
                 }
                 if($('#budget_modal').hasClass('d-none')){
                     $('#budget_modal').removeClass('d-none');
                 }
+            }else{
+                deal_status.value = 1;
             }
             $('#exampleFormControlSelect1').on('change', function(){
                 if($(this).val() == 2){
+                    deal_status.value = 2
                     if($('#flat_modal').hasClass('d-none')){
                         $('#flat_modal').removeClass('d-none');
                     }
@@ -285,6 +293,7 @@
                         $('#budget_modal').removeClass('d-none');
                     }
                 }else{
+                    deal_status.value = 1
                     if(!$('#flat_modal').hasClass('d-none')){
                         $('#flat_modal').addClass('d-none');
                     }
@@ -294,42 +303,42 @@
                 }
             });
             @if($house_flat != '')
-                if(localStorage.getItem('first_name') != undefined){
-                    $('#first_name').val(localStorage.getItem('first_name'))
-                }
-                if(localStorage.getItem('last_name') != undefined){
-                    $('#last_name').val(localStorage.getItem('last_name'))
-                }
-                if(localStorage.getItem('middle_name') != undefined){
-                    $('#middle_name').val(localStorage.getItem('middle_name'))
-                }
-                if(localStorage.getItem('phone') != undefined){
-                    $('#phone').val(localStorage.getItem('phone'))
-                }
-                if(localStorage.getItem('additional_phone') != undefined){
-                    $('#additional_phone').val(localStorage.getItem('additional_phone'))
-                }
-                if(localStorage.getItem('email') != undefined){
-                    $('#email').val(localStorage.getItem('email'))
-                }
-                if(localStorage.getItem('source') != undefined){
-                    $('#source').val(localStorage.getItem('source'))
-                }
-                if(localStorage.getItem('looking_for') != undefined){
-                    $('#looking_for').val(localStorage.getItem('looking_for'))
-                }
-                if(localStorage.getItem('series_number') != undefined){
-                    $('#series_number').val(localStorage.getItem('series_number'))
-                }
-                if(localStorage.getItem('issued_by') != undefined){
-                    $('#issued_by').val(localStorage.getItem('issued_by'))
-                }
-                if(localStorage.getItem('inn') != undefined){
-                    $('#inn').val(localStorage.getItem('inn'))
-                }
-                if(localStorage.getItem('budget') != undefined){
-                    $('#budget').val(localStorage.getItem('budget'))
-                }
+            if(localStorage.getItem('first_name') != undefined){
+                $('#first_name').val(localStorage.getItem('first_name'))
+            }
+            if(localStorage.getItem('last_name') != undefined){
+                $('#last_name').val(localStorage.getItem('last_name'))
+            }
+            if(localStorage.getItem('middle_name') != undefined){
+                $('#middle_name').val(localStorage.getItem('middle_name'))
+            }
+            if(localStorage.getItem('phone') != undefined){
+                $('#phone').val(localStorage.getItem('phone'))
+            }
+            if(localStorage.getItem('additional_phone') != undefined){
+                $('#additional_phone').val(localStorage.getItem('additional_phone'))
+            }
+            if(localStorage.getItem('email') != undefined){
+                $('#email').val(localStorage.getItem('email'))
+            }
+            if(localStorage.getItem('source') != undefined){
+                $('#source').val(localStorage.getItem('source'))
+            }
+            if(localStorage.getItem('looking_for') != undefined){
+                $('#looking_for').val(localStorage.getItem('looking_for'))
+            }
+            if(localStorage.getItem('series_number') != undefined){
+                $('#series_number').val(localStorage.getItem('series_number'))
+            }
+            if(localStorage.getItem('issued_by') != undefined){
+                $('#issued_by').val(localStorage.getItem('issued_by'))
+            }
+            if(localStorage.getItem('inn') != undefined){
+                $('#inn').val(localStorage.getItem('inn'))
+            }
+            if(localStorage.getItem('budget') != undefined){
+                $('#budget').val(localStorage.getItem('budget'))
+            }
             @endif
             $('#select_flat').on('click', function() {
                 if($('#first_name').val() != undefined){
