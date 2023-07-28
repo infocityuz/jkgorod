@@ -32,11 +32,11 @@
 
             <div class="d-flex justify-content-between">
                 <div class="d-flex">
-                    <a href="{{ route('forthebuilder.house.index') }}" class="plus2 profileMaxNazadInformatsiyaKlient">
+                    <a href="{{ route('forthebuilder.house.show-details', [$model->house_id, $model->entrance, 0]) }}" class="plus2 profileMaxNazadInformatsiyaKlient">
                         <img src="{{ asset('backend-assets/forthebuilders/images/icons/arrow-left.png') }}" alt="">
                     </a>
                     <h2 class="panelUprText">
-                        @if (is_int($model->room_count))
+                        @if ($model->room_count > 0)
                             {{ $model->number_of_flat }} - {{ translate('flat') }} {{ $model->total_area }} м <sup>2</sup>
                         @elseif ($model->room_count == 'p')
                             {{ $model->number_of_flat }} - {{ translate('parking') }}
@@ -145,14 +145,14 @@
                         </div>
                     @endif
 
-                    @if ($areas->hotel)
+                    @if (isset($areas->hotel))
                     <div class="jkEditText1">
                         <div class="jkAttributEdit2">{{ translate('Hotel') }}</div>
                         <div class="jkAttributEdit2">{{ $areas->hotel ?? 0 }}</div>
                     </div>
                     @endif
                     
-                    @if ($areas->bedroom)
+                    @if (isset($areas->bedroom))
                         <div class="jkEditText1">
                             <div class="jkAttributEdit2">{{ translate('Bedroom') }}</div>
                             <div class="jkAttributEdit2">{{ $areas->bedroom ?? 0 }}</div>

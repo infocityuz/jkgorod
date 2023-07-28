@@ -785,11 +785,10 @@ class HouseController extends Controller
     {
         $data = $request->validated();
         $model = House::findOrFail($id);
-        $model->house_info = $data['house_info'];
-        $model->house_number = $data['house_number'];
-        $model->corpas = $data['corpas'];
-        $model->enterance_count = $data['enterance_count'];
-        $model->floor_count = $data['floor_count'];
+        $model->name = $data['name'];
+        $model->corpus = $data['corpus'];
+        $model->project_stage = $data['project_stage'];
+        $model->description = $data['description'];
         $model->save();
 
         Log::channel('action_logs2')->info("пользователь обновил house", ['info-data' => $model]);

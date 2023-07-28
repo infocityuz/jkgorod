@@ -1,109 +1,94 @@
 @extends('forthebuilder::layouts.forthebuilder')
-
+@php
+    use Modules\ForTheBuilder\Entities\House;
+@endphp
 @section('title')
-    {{__('locale.update')}}
+    {{ translate('JK') }}
 @endsection
-
-@section('styles')
-
-@endsection
-
 @section('content')
-    <div class="page-header card">
+    <div class="d-flex aad">
+        @include('forthebuilder::layouts.content.navigation')
+        <div class="mainMargin">
+            @include('forthebuilder::layouts.content.header')
+            <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                    <a href="{{ route('forthebuilder.house.index') }}" class="plus2 profileMaxNazadInformatsiyaKlient"><img
+                            src="{{ asset('backend-assets/forthebuilders/images/icons/arrow-left.png') }}" alt=""></a>
+                    <h2 class="panelUprText">{{ translate('Create a new JK') }}</h2>
+                </div>
+            </div>
+
+            <div class="sozdatJkData">
+                <form action="{{route('forthebuilder.house.update',$model->id)}}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
+                    <div class="row">
+                        <div class="col-md-8">
+                            {{-- <div class="card card-primary"> --}}
+                                {{-- <div class="card-body"> --}}
+                                    {{-- @dd($model) --}}
+                                    <div class="form-group">
+                                        <h3 class="sozdatImyaSpisokH3">{{ translate('Name of JK') }}</h3>
+                                        <input type="text" name="name" id="name"
+                                               class="form-control @error('name') error-data-input is-invalid @enderror"
+                                               value="{{ $model->name, old('name') }}" required>
+                                        <span class="error-data">@error('name'){{$message}}@enderror</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="sozdatImyaSpisokH3">{{ translate('Corpas') }}</h3>
+                                        <input type="text" name="corpus" id="corpus"
+                                               class="form-control @error('corpus') error-data-input is-invalid @enderror"
+                                               value="{{ $model->corpus, old('corpus') }}" >
+                                        <span class="error-data">@error('corpus'){{$message}}@enderror</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="sozdatImyaSpisokH3">{{ translate('Object status') }}</h3>
+                                        <select class="form-control sozdatImyaSpisokSelectOption2 @error('project_stage') errpr-data-input is-invalid @enderror" id="exampleFormControlSelect1" name="project_stage">
+                                            <option value="{{ House::DESIGN }}" {{ ($model->project_stage == House::DESIGN) ? 'selected' : '' }}>{{ translate('Design') }}</option>
+                                            <option value="{{ House::AT_THE_FOUNDATION_STAGE }}" {{ ($model->project_stage == House::AT_THE_FOUNDATION_STAGE) ? 'selected' : '' }}>
+                                                {{ translate('At the foundation stage') }}</option>
+                                            <option value="{{ House::AT_THE_PRE_SALE_STAGE }}" {{ ($model->project_stage == House::AT_THE_PRE_SALE_STAGE) ? 'selected' : '' }}>
+                                                {{ translate('At the pre-sale stage') }}</option>
+                                            <option value="{{ House::START_OF_OFFICIAL_SALES }}" {{ ($model->project_stage == House::START_OF_OFFICIAL_SALES) ? 'selected' : '' }}>
+                                                {{ translate('Start of official sales') }}</option>
+                                            <option value="{{ House::STATUS_COMPLATED }}" {{ ($model->project_stage == House::STATUS_COMPLATED) ? 'selected' : '' }}>
+                                                {{ translate('Completed') }}</option>
+                                        </select>
+                                        <span class="error-data">
+                                            @error('project_stage')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="sozdatImyaSpisokH3">{{ translate('Description of the object') }}</h3>
+                                        <input type="text" name="description" id="description"
+                                               class="form-control @error('description') error-data-input is-invalid @enderror"
+                                               value="{{  $model->description,  old('description') }}" >
+                                        <span class="error-data">@error('description'){{$message}}@enderror</span>
+                                    </div>
+
+
+                                {{-- </div> --}}
+                            {{-- </div> --}}
+
+
+                        </div>
+                    </div>
+
+                   <div class="row">
+                        <div class="col-md-12">
+                            {{-- <div class="card-footer justify-content-end" style=""> --}}
+                                <button type="submit" class="btn btn-success">{{translate('update')}}</button>
+                            {{-- </div> --}}
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="card">
-        <div class="content-header">
-            <div class="container-fluid card-block">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0"> {{__('locale.update')}}</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{route('forthebuilder.index')}}"> {{__('locale.home')}}</a></li>
-                            <li class="breadcrumb-item"><a href="{{route('forthebuilder.house.index')}}">{{__('locale.house')}}</a></li>
-                            <li class="breadcrumb-item active">{{__('locale.update')}}</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <form action="{{route('forthebuilder.house.update',$model->id)}}" method="POST" enctype="multipart/form-data">
-        @csrf
-        @method('PUT')
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card card-primary">
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="house_number">{{__('locale.house_name')}}</label>
-                            <input type="text" name="house_number" id="house_number"
-                                   class="form-control @error('house_number') error-data-input is-invalid @enderror"
-                                   value="{{ $model->house_number, old('house_number') }}" required>
-                            <span class="error-data">@error('house_number'){{$message}}@enderror</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="corpas">{{__('locale.corpas')}}</label>
-                            <input type="text" name="corpas" id="corpas"
-                                   class="form-control @error('corpas') error-data-input is-invalid @enderror"
-                                   value="{{ $model->corpas, old('corpas') }}" >
-                            <span class="error-data">@error('corpas'){{$message}}@enderror</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="house_number">{{__('locale.info')}}</label>
-                            <input type="text" name="house_info" id="house_info"
-                                   class="form-control @error('house_info') error-data-input is-invalid @enderror"
-                                   value="{{  $model->house_info,  old('house_info') }}" >
-                            <span class="error-data">@error('house_info'){{$message}}@enderror</span>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col-md-4">
-                <div class="card card-primary">
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="enterance_count">{{__('locale.enterance_count')}}</label>
-                            <input type="number" name="enterance_count" id="enterance_count"
-                                   class="form-control @error('enterance_count') error-data-input is-invalid @enderror"
-                                   value="{{ $model->enterance_count, old('enterance_count') }}" required>
-                            <span class="error-data">@error('enterance_count'){{$message}}@enderror</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="floor_count">{{__('locale.floor_count')}}</label>
-                            <input type="number" name="floor_count" id="floor_count"
-                                   class="form-control @error('floor_count') error-data-input is-invalid @enderror"
-                                   value="{{ $model->floor_count, old('floor_count') }}" required>
-                            <span class="error-data">@error('floor_count'){{$message}}@enderror</span>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-       <div class="row">
-            <div class="col-md-12">
-                <div class="card-footer justify-content-end" style="">
-                    <button type="submit" class="btn btn-success">{{__('locale.update')}}</button>
-                </div>
-            </div>
-        </div>
-
-    </form>
     <script>
         let page_name = 'house';
     </script>
-
 @endsection
-
-

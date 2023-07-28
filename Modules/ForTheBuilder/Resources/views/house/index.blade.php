@@ -88,6 +88,12 @@
                                                 src="{{ asset('backend-assets/forthebuilders/images/eye.png') }}"
                                                 alt="Eye">
                                     </a>
+                                    <a href="{{ route('forthebuilder.house.edit', $model->id) }}"
+                                        class="seaDiv">
+                                            <img style="margin-top: 4px;" width="25" height="25"
+                                                src="{{ asset('backend-assets/forthebuilders/images/edit.png') }}"
+                                                alt="edit">
+                                    </a>
                                     <a href="#" class="seaDiv deleteHouses" data-delete_url="{{ route('forthebuilder.house.destroy', $model->id ?? 0) }}">
                                         <img class="mt-1" width="20" height="20" data-toggle="modal"
                                             data-target="#exampleModalLong"
